@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="switcheableimage" src="kamiatisScifair.jpg" alt="" height="400px" width="400px">
+    <br>
+    <button onclick="nextimage()">Next Image</button>
+    <button onclick="revertimage()">Revert</button>
+    <br>
+    <button onclick="pageswitch()">Back to Page 1</button>
+
+    <script>        
+        function nextimage() {
+            switcheableimage.src = 'unknown (1).png';
+        }
+
+        function revertimage() {
+            switcheableimage.src = 'kamiatisScifair.jpg';
+        }
+
+        function pageswitch() {
+            alert("You will be rerouted back to page 1");
+            window.open('index.html');
+        }
+    </script>
+
+    
+</body>
+</html>
